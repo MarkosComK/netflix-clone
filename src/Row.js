@@ -4,7 +4,7 @@ import './Row.css'
 
 const base_url = "https://image.tmdb.org/t/p/original/";
 
-function Row({ title, fetchUrl }) {
+function Row({ title, fetchUrl, isLargeRow }) {
     const [movies, setMovies] = useState([])
 
     //A snippet of code wich runs based on a specific condition

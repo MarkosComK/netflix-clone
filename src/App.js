@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css';
 import Row from './Row';
 import  requests from './requests';
@@ -6,7 +7,11 @@ function App() {
   return (
     <div className="App">
       <h1>Hey. Here's MarkosComK and i'm building a Netflix Clone using React.JS</h1>
-      <Row title="NETFLIX ORIGINALS" fetchUrl={requests.fetchNetflixOriginals}/>
+      <Row
+      title="NETFLIX ORIGINALS"
+      fetchUrl={requests.fetchNetflixOriginals }
+      isLargeRow
+      />
       <Row title="Trending now" fetchUrl= {requests.fetchTrending}/>
       <Row title="Top Rated" fetchUrl= {requests.fetchTopRated}/>
       <Row title="Action Movies" fetchUrl= {requests.fetchActionMovies}/>
