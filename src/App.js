@@ -8,7 +8,6 @@ function App() {
   return (
     <div className="App">
       <Banner/>
-      <h1>Hey. Here's MarkosComK and i'm building a Netflix Clone using React.JS</h1>
       <Row
       title="NETFLIX ORIGINALS"
       fetchUrl={requests.fetchNetflixOriginals }
